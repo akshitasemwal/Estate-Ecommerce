@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function OAuth() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  console.log(import.meta.env.VITE_FIREBASE_API_KEY);
+
   const handleGoogleClick = async () => {
     try {
       const provider = new GoogleAuthProvider();
@@ -31,7 +31,7 @@ export default function OAuth() {
       dispatch(signInSuccess(data));
       navigate("/");
     } catch (error) {
-      console.log("could not sign in with google", error);
+      console.log("Could not sign in with google", error);
     }
   };
   return (
