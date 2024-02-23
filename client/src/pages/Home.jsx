@@ -80,7 +80,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      {console.log(offerListings.length)}
+
       {/* swiper */}
       <Swiper navigation>
         {offerListings &&
@@ -93,9 +93,7 @@ export default function Home() {
                   backgroundSize: "cover",
                 }}
                 className="h-[500px]"
-              >
-                <h1>HII</h1>
-              </div>
+              ></div>
             </SwiperSlide>
           ))}
 
@@ -109,9 +107,7 @@ export default function Home() {
                   backgroundSize: "cover",
                 }}
                 className="h-[500px]"
-              >
-                <h1>HII</h1>
-              </div>
+              ></div>
             </SwiperSlide>
           ))}
 
@@ -125,9 +121,7 @@ export default function Home() {
                   backgroundSize: "cover",
                 }}
                 className="h-[500px]"
-              >
-                <h1>HII</h1>
-              </div>
+              ></div>
             </SwiperSlide>
           ))}
       </Swiper>
